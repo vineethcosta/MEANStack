@@ -1,0 +1,33 @@
+Setting up the environment for MEAN Stack and performing basic CRUD operations demo:
+
+1 -- Download Node.js from (https://nodejs.org/en/download)
+
+2 -- Download mongodb community server (https://www.mongodb.com/download-center/community)
+
+3 -- Do this in your command line once intsallation is done:cd C:\Program Files\MongoDB\Server\4.2\bin-navigate to the path
+mongod.exe --dbpath C:\Users\vp185149\Mongo-data  --execute mongod and stores the databases created in the given path
+
+4 -- Open MongoDb Compass Community and establish the connection. Create database(CrudDb) and give collection Name(employees)--table name
+
+5 -- First setup the NodeJS server side by creating a folder wherever you want ---  navigate to that path and open cmd there and follow the steps given below
+	
+	*npm init 
+	*npm install express mongoose body-parser --save
+	
+6 -- Connect Mongo database we created earlier to Node.js project using db.js.Use nodemon to dynamically update changes made in the server instead of running it again and again.
+     
+7 -- npm install -g nodemon
+
+8 -- Now perform the CRUD operations GET,POST(using POSTMAN),PUT(using POSTMAN) and DELETE. run your server application on localhost:3000 and test the operations
+
+9 -- Now install angular 5 in your project using -- > ng new appname  
+
+10 -- The angular app will be hosted locally in your computer in localhost:4200 after you run it using the command: ng serve --open
+
+11 -- Add an employee component using --> ng g c employee
+
+12 -- Create a model class using -->ng g class employee --type=model
+
+13 -- Create service class using -->ng g s employee
+
+14 --   appComponent-->employeeComponent-->employeeService-->employeeModel
